@@ -195,7 +195,7 @@ private fun HomeTopAppBar(
 @Composable
 private fun HomeScreenPreview() {
     SunflowerTheme {
-        val pages = SunflowerPage.values()
+        val pages = SunflowerPage.entries.toTypedArray()
         HomePagerScreen(
             onPlantClick = {},
             pagerState = rememberPagerState(pageCount = { pages.size }),

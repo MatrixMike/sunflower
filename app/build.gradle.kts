@@ -31,7 +31,7 @@ android {
     targetSdk = libs.versions.targetSdk.get().toInt()
     testInstrumentationRunner = "com.google.samples.apps.sunflower.utilities.MainTestRunner"
     versionCode = 1
-    versionName = "0.1.6"
+    versionName = "0.1.6 July4"
     vectorDrawables.useSupportLibrary = true
 
     // Consult the README on instructions for setting up Unsplash API key

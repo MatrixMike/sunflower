@@ -71,7 +71,7 @@ fun HomeScreen(
     modifier: Modifier = Modifier,
     onPlantClick: (Plant) -> Unit = {},
     viewModel: PlantListViewModel = hiltViewModel(),
-    pages: Array<SunflowerPage> = SunflowerPage.values()
+    pages: Array<SunflowerPage> = SunflowerPage.entries.toTypedArray()
 ) {
     val pagerState = rememberPagerState(pageCount = { pages.size })
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
